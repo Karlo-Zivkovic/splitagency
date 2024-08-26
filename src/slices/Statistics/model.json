@@ -1,0 +1,68 @@
+{
+  "id": "statistics",
+  "type": "SharedSlice",
+  "name": "Statistics",
+  "description": "Statistics",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,strong"
+          }
+        },
+        "content": {
+          "type": "Text",
+          "config": {
+            "label": "content",
+            "placeholder": ""
+          }
+        },
+        "stats": {
+          "type": "Group",
+          "config": {
+            "label": "stats",
+            "repeat": true,
+            "fields": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "label": "icon",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "number": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "number",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "heading3,strong"
+                }
+              },
+              "stat_content": {
+                "type": "Text",
+                "config": {
+                  "label": "stat_content",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

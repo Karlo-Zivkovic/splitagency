@@ -1,0 +1,89 @@
+logo?
+
+https://tailblocks.cc/ - gotovi tailwind blokovi koje mos reusat za pocetak
+
+Turisticka agencija -> prodaja izleta (mos i prominit tematiku, al odaberi nesto da mos realno analizirat zahtjeve)
+
+Komponente:
+Galerija s lightboxom
+Kontakt forma -> slanje preko sendgrida
+Mapa -> korisnik sam moze unijeti koordinate preko cms-a
+Pricing sekcija
+Services sekcija
+CTA
+Faq
+
+Stranice:
+Naslovnica
+O nama
+Kontakt
+Stranica s listom izleta
+Izlet -> stranica s pojedinacnim izletom
+	Kada korisnik posalje upit, pošalji i ime izleta te link izleta skupa s upitom
+Straanica s listom destinacij
+Destinacija -> stranica s pojedinacnom destinacijom
+
+Bilo koja kontakt forma -> neka vodi na /message-sent ako je uspjesno poslana. 
+Mos stavit i da se botun ne moze vise puta kliknit pa da ne posalje vise mailova dok salje.
+Stavi i da se ta stranica ne indexira na google-u.
+Pazi da slideri, galerije i slicno koriste Next Image radi kompresije i optimizacije slike.
+Stavke u menu-u stavi da user samo moze dodavat kroz cms.
+Whatsapp botun u kantunu dna svake stranice
+Header i footer na svakoj stranici
+Logo useri isto mogu sami mijenjat (najbolje logo stavljat u svg formatu)
+
+OPCENITO BITNO (kad i sadrzaj radis ili da mos objasnit klijentima):
+Sadržaj je jako bitan, nista kopipejstano s neta.
+1 keyword po stranici
+Koristi keyword u: 
+•	URL
+•	Meta title
+•	Meta description (zamisli to kao oglas za tocnu tu podstranicu)
+•	U tekstu di zvuči prirodno
+•	U podnaslovima
+•	Slike – file name i image title(pojavi se kao tooltip kad hoveras sliku), obavezno i alt uz svaku sliku, opisno
+
+Podaci o firmi – ime, adresa, tel -> pazi da su tocni i konzistentni, moze u  footeru
+Kreiraj profil na google maps (prije google my business)
+URL-ovi šta kraći, za razmake u slugu obavezno „-„, nikako „_“ (imestranice.com/taxi-cjenik“
+H1 na svakoj stranici, samo jedan
+Pazi da nema duplog sadrzaja, meta titleova i meta descriptiona
+Linkovi za socijalne mreže (slican vizualni identitet na svakoj koju koristis – profilna, cover, ime, etc)
+Open graph – kad shareas na facebooku, whatsappu i twitteru da povuce sliku, naslov, description (mozes testirat ovde https://developers.facebook.com/tools/debug/, za whatsapp treba bit dosta mala slika, mislim 400x400 ili manja da bi je prikazalo)
+Podesit Google Tag Manager i preko njega google analytics i tracking za google ads konverzije
+Izgenerirat sitemapu i prijavit je na https://search.google.com/search-console/
+Ni nije lose maknit ekstenzije .html, .php i sl. (https://imestranice.com/taxi-cjenik.html -> https://imestranice.com/taxi-cjenik) – za apache servere to radis preko .htaccess filea
+Odabrat osnovnu stranicu i ostale redirektat na nju (npr: osnovna https://imestranice.com, a redirektat https://www.imestranice.com, http://imestranice.com, http://www.imestranice.com). Ja uvik odaberem https i bez www, a ostale redirektam.
+Optimizirat slike (resizeat, 72ppi). Profi slike masu znace od branse do branse, mada je jako bitno da ne pare stock photos nego autenticno.
+Bez autoplay videa (eventualno neki mali pozadinski hero video kao dio dizajna)  i zvuka na stranici 
+Minificirat sve fileove (html, js, css…)
+Koristit CDN
+Koristit HTTPS
+Koristit vektore di god mozes za slike
+Skripte na dno stranice ako moze
+Sto manje skripti, librarya i opcenito requestova
+Dobar kontrast izmedju fonta i pozadine
+Provjerit gramatiku
+Tekstovi povezani s naslovima
+Privacy policy i terms of use
+Cookie approval
+Minjaj cursor pointer na linkovima
+Bez previše animacija
+Pravilni i konzistentni razmaci između elemenata
+Dizajn napravi predvidljivim (menu di ga korisnik ocekuje,
+linkovi drukciji od obicnog teksta, kontakt zadnji u meniu itd.)
+CTA – jedan po stranici – ne previsoko na stranici, userima ipak treba nesto informacija prije nego kliknu
+Subscribeat na newsletter ako ga ima namjeru slat
+Input forme – sto manje podataka za unos, odnosno samo sto je nuzno odmah
+Pazit da su popunjena sva required polja
+Captcha protiv spama
+Pazi na userexperience koliko god mos.
+Primjer – kad user promini jezik stranice – ostavi ga na istoj stranici,
+ne natrag na naslovnicu s promijenjenim jezikom
+Odvrtit google page speed insight,
+gt metrix etc – tamo dobije score i detalje kako ga popravit 
+(sve, od performancea, accessibilitya do seo-a).
+Sto optimiziranija stranica to ce je prije rangirat, a i jeftiniji click ispadne za PPC
+Ako testiras lokalnu u browseru, pazi da testiras produkcijsku verziju (npr. kod nextjs-a ne npm run dev nego npm run start – nakon builda)
+Provjerit kako google crawla tvoj site i ima li problema pri indexiranju stranica
+Pazi na responsivnes, mobilna verzija je najbitnija. Google po njoj rangira cak i desktop verziju. Velika vecina usera dolazi priko mobitela i taj trend ce se jos povecat.

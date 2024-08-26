@@ -1,0 +1,62 @@
+{
+  "id": "tour_types",
+  "type": "SharedSlice",
+  "name": "TourTypes",
+  "description": "TourTypes",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "category": {
+          "type": "Group",
+          "config": {
+            "label": "category",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "heading2,strong"
+                }
+              },
+              "categoryname": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "categoryName",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "heading3,strong"
+                }
+              },
+              "content": {
+                "type": "Text",
+                "config": {
+                  "label": "content",
+                  "placeholder": ""
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

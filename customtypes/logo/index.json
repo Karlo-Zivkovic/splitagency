@@ -1,0 +1,25 @@
+{
+  "format": "custom",
+  "id": "logo",
+  "label": "logo",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

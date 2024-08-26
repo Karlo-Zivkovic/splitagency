@@ -1,0 +1,67 @@
+{
+  "id": "trips",
+  "type": "SharedSlice",
+  "name": "Trips",
+  "description": "Trips",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "trip": {
+          "type": "Group",
+          "config": {
+            "label": "trip",
+            "repeat": true,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "category": {
+                "type": "Text",
+                "config": {
+                  "label": "category",
+                  "placeholder": ""
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "heading3,strong"
+                }
+              },
+              "price": {
+                "type": "Text",
+                "config": {
+                  "label": "price",
+                  "placeholder": ""
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

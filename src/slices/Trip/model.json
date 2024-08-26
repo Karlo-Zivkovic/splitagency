@@ -1,0 +1,71 @@
+{
+  "id": "trip",
+  "type": "SharedSlice",
+  "name": "Trip",
+  "description": "Trip",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,strong"
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "description",
+            "placeholder": ""
+          }
+        },
+        "duration": {
+          "type": "Text",
+          "config": {
+            "label": "duration",
+            "placeholder": ""
+          }
+        },
+        "numberofpeople": {
+          "type": "Text",
+          "config": {
+            "label": "numberOfPeople",
+            "placeholder": ""
+          }
+        },
+        "price": {
+          "type": "Text",
+          "config": {
+            "label": "price",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "activity": {
+          "type": "Text",
+          "config": {
+            "label": "activity",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
